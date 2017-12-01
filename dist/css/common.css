@@ -1,0 +1,209 @@
+/*css reset   重置css样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: hsl(0, 0%, 96%);
+    /*行高间距是1.5倍，字体12px*/
+    /*line-height: 1.5;*/
+    /*font-size: 12px;*/
+    /*font-family: Tahoma,Arial,Microsoft YaHei,sans-serif;*/
+    font: 12px/1.5 Tahoma,Arial,Microsoft YaHei,sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    border: none;
+}
+
+label{
+    cursor: pointer;
+}
+
+input[type='checkbox']{
+    cursor: pointer;
+}
+
+/*定宽布局*/
+.W{
+    /*width: 1080px;*/
+    margin: 0 auto;
+    position: relative;
+    /*清楚浮动，超出隐藏*/
+    overflow: hidden;
+}
+
+.hide{
+    display: none;
+}
+/*连接*/
+.link{
+    font-size: 13px;
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #e80012;
+}
+
+.link-text{
+    color: #999;
+    text-decoration: none;
+}
+
+/*按钮*/
+.btn{
+    display: inline-block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: none;
+    background: #FF8900;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-mini{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+/*loading*/
+.loading{
+    margin: 10px auto;
+    display: block;
+    background: url(../image/加载中.gif) no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    opacity: .6;
+}
+.footer{
+    padding-top: 50px;
+}
+
+.footer .link-footer{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    color: #999999;
+}
+
+.footer .link-footer .link{
+    padding: 0 20px;
+}
+
+.footer .copyright{
+    text-align: center;
+    line-height: 30px;
+}.header .logo{
+    position: absolute;
+    left: 11%;
+    top: 34px;
+    display: block;
+    font-size: 36px;
+    color: #c60023;
+    font-weight: bold;
+}
+
+.header .search-con{
+    padding: 40px 0 30px 250px;
+}
+
+.header .search-con .search-input{
+    position: relative;
+    left: 7%;
+    width: 45%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    padding-left: 10px;
+    border: 2px solid #FF8900;
+    border-radius: 15px;
+}
+
+.header .search-con .search-btn{
+    position: relative;
+    height: 42px;
+    width: 120px;
+    top: -4px;
+    left: 7.5%;
+    border-radius: 10px;
+    font-size: 18px;
+
+}.nav{
+    background: #eeeeee;
+    height: 30px;
+    line-height: 30px;
+}
+/*用户部分*/
+.nav .user{
+    float: left;
+    position: absolute;
+    left: 4%
+}
+.nav .user.login{
+    display: none;
+}
+
+.nav .user .link{
+    margin-right: 5px;
+}
+
+/*导航连接*/
+.nav .nav-list{
+    position: relative;
+    right:6%;
+    float: right;
+    display: inline-block;
+    width: 300px;
+}
+.nav .nav-list .nav-item{
+    clear: right;
+    position: relative;
+    display: inline-block;
+    margin-left:13px;
+    float: left;
+}
+
+/*导航主体*/
+.nav-side{
+    position: relative;
+    left: 50px;
+    float: left;
+    width: 130px;
+}
+
+.nav-side .nav-item{
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+}
+
+.nav-side .nav-item .link{
+    color: #888;
+}
+.nav-side .nav-item .link:hover {
+    color: #F50E1E;
+}
+/*右侧内容区*/
+.with-nav{
+    float: left;
+    width: 50px;
+}

@@ -1,29 +1,20 @@
-webpackJsonp([0],{
+webpackJsonp([1],{
 
-/***/ 27:
+/***/ 12:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(28);
+module.exports = __webpack_require__(13);
 
 
 /***/ }),
 
-/***/ 28:
+/***/ 13:
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-__webpack_require__(2);
-__webpack_require__(29);
-
-/***/ }),
-
-/***/ 29:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
+// require('./index.css');
+var ff = __webpack_require__(0);
+// require('../common/header/header');
 
 /***/ })
 
-},[27]);
+},[12]);
