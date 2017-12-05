@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require ('html-loader!./public/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title%> -飞火商城</title>
+    <link rel="stylesheet" href="../../dist/css/common.css">
+</head>
+<body>
+<%= require ('html-loader!./public/nav-simple.html') %>
+<div class="page-wrap">
+    <div>
+        <div class="user-con">
+            <div class="user-title">找回密码</div>
+            <div class="user-box">
+                <div class="error-item">
+                    <i class="fa fa-minus-circle error-icon" aria-hidden="true"></i>
+                    <p class="err-msg">Error</p>
+                </div>
+                <div class="step-con step-username">
+                    <p class="user-item-text">请输入用户名</p>
+                    <div class="user-item">
+                        <label class="user-label" for="step-username">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        </label>
+                        <input type="text" class="user-content" id="username"
+                               placeholder="请输入用户名" autocomplete="off">
+                    </div>
+                    <a class="btn btn-submit" id="step-username">下&nbsp;&nbsp;一&nbsp;&nbsp;步</a>
+                </div>
+                <div class="step-con step-question">
+                    <p class="user-item-text">请输入密保问题：
+                        <input type="text" class="question">
+                    </p>
+                    <div class="user-item">
+                        <label class="user-label" for="step-answer">
+                            <i class="fa fa-key" aria-hidden="true"></i>
+                        </label>
+                        <input type="text" class="user-content" id="answer"
+                               placeholder="请输入密保答案" autocomplete="off">
+                    </div>
+                    <a class="btn btn-submit" id="step-answer">
+                        下&nbsp;&nbsp;一&nbsp;&nbsp;步
+                    </a>
+                </div>
+                <div class="step-con step-password">
+                    <p class="user-item-text">请输入新密码</p>
+                    <div class="user-item">
+                        <label class="user-label" for="step-password">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </label>
+                        <input type="password" class="user-content" id="password"
+                               placeholder="请输入新密码" autocomplete="off">
+                    </div>
+                    <a class="btn btn-submit" id="step-password">
+                        下&nbsp;&nbsp;一&nbsp;&nbsp;步
+                    </a>
+                </div>
+                <div class="link-item">
+                    <a class="link" href="./user-login.html" target="_blank">返回登录>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <%= require ('html-loader!./public/footer.html') %>
+</body>
+</html>

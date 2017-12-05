@@ -1,0 +1,25 @@
+/*导航主体*/
+.nav-side{
+    position: relative;
+    left: 7%;
+    float: left;
+    width: 130px;
+}
+
+.nav-side .nav-item{
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+}
+
+.nav-side .nav-item .link{
+    color: #888;
+}
+.nav-side .nav-item .link:hover {
+    color: #F50E1E;
+}
+/*右侧内容区*/
+.with-nav{
+    float: left;
+    width: 50px;
+}

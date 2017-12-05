@@ -1,0 +1,20 @@
+.footer{
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.footer .link-footer{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    color: #999999;
+}
+
+.footer .link-footer .link{
+    padding: 0 20px;
+}
+
+.footer .copyright{
+    text-align: center;
+    line-height: 30px;
+}

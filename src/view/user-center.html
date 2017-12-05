@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require ('html-loader!./public/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title%> -飞火商城</title>
+    <link rel="stylesheet" href="../../dist/css/common.css">
+</head>
+<body>
+<%= require ('html-loader!./public/nav.html') %>
+<%= require ('html-loader!./public/header.html') %>
+<div class="crumb">
+    <div>
+        <div class="crumb-con">
+            <a href="./index.html" class="link user-center-title">FiyFire</a>
+            <span>></span>
+            <span class="link-test"><%= htmlWebpackPlugin.options.title%></span>
+        </div>
+    </div>
+</div>
+<%= require ('html-loader!./public/nav-side.html') %>
+<div class="content with-nav">
+    <div class="panel">
+        <div class="panel-title">个人中心</div>
+        <div class="panel-body">
+            <div class="form-line">
+                <span class="label">用户名：</span>
+                <span class="text">谁知道</span>
+            </div>
+            <div class="form-line">
+                <span class="label">电话&nbsp;&nbsp;&nbsp;：</span>
+                <span class="text">谁知道</span>
+            </div>
+            <div class="form-line">
+                <span class="label">邮&nbsp;&nbsp;箱&nbsp;：</span>
+                <span class="text">谁知道</span>
+            </div>
+            <div class="form-line">
+                <span class="label">问&nbsp;&nbsp;题&nbsp;：</span>
+                <span class="text">谁知道</span>
+            </div>
+            <div class="form-line">
+                <span class="label">答&nbsp;&nbsp;案&nbsp;：</span>
+                <span class="text">谁知道</span>
+            </div>
+            <div class="form-line">
+                <a class="btn btn-submit" href="./user-center-update.html">编辑</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-footer">
+    <%= require ('html-loader!./public/footer.html') %>
+</div>
+</body>
+</html>

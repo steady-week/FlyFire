@@ -1,0 +1,115 @@
+/*css reset   重置css样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: hsl(0, 0%, 96%);
+    font: 12px/1.5 Tahoma,Arial,Microsoft YaHei,sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    border: none;
+}
+
+label{
+    cursor: pointer;
+}
+
+input[type='checkbox']{
+    cursor: pointer;
+}
+
+/*定宽布局*/
+.w{
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    /*清楚浮动，超出隐藏*/
+    overflow: hidden;
+}
+
+/*panel*/
+.panel{
+    padding: 10px;
+    background: #ffffff;
+}
+
+.panel .panel-title{
+    padding: 10px;
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.panel .panel-body{
+    padding: 10px;
+    overflow: hidden;
+}
+
+.hide{
+    display: none;
+}
+/*连接*/
+.link{
+    font-size: 13px;
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #e80012;
+}
+
+.link-text{
+    color: #999;
+    text-decoration: none;
+}
+
+/*按钮*/
+.btn{
+    display: inline-block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: none;
+    background: #FF8900;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-mini{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+/*loading*/
+.loading{
+    margin: 10px auto;
+    display: block;
+    background: url("../../image/加载中.gif") no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    opacity: .6;
+}
+
+.footer-footer{
+    position: relative;
+    margin-top: 400px;
+}

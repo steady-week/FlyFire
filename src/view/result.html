@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require ('html-loader!./public/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title%> -飞火商城</title>
+    <link rel="stylesheet" href="../../dist/css/common.css">
+</head>
+<body>
+    <%= require ('html-loader!./public/nav-simple.html') %>
+    <div class="page-wrap">
+        <div class="result-con register-success">
+            <h1 class="result-title">
+                恭喜您，注册成功!
+            </h1>
+            <div class="result-content">
+                <a href="./index.html" class="link">回到首页</a>
+                <a href="./user-login.html" class="link">立即登录</a>
+            </div>
+        </div>
+        <div class="page-wrap">
+            <div class="result-con pass-reset-success">
+                <h1 class="result-title">
+                    恭喜您，重置密码成功!
+                </h1>
+                <div class="result-content">
+                    <a href="./index.html" class="link">回到首页</a>
+                    <a href="./user-login.html" class="link">立即登录</a>
+                </div>
+            </div>
+        <div class="result-con default-success">
+            <h1 class="result-title">
+                恭喜您，操作成功!
+            </h1>
+            <div class="result-content">
+                <a href="./index.html" class="link">回到首页</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer-footer">
+        <%= require ('html-loader!./public/footer.html') %>
+    </div>
+</body>
+</html>

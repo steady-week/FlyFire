@@ -1,0 +1,38 @@
+.header .logo{
+    left: 157px;
+    top: 63px;
+    display: block;
+    font-size: 36px;
+    color: #c60023;
+    font-weight: bold;
+}
+
+.header .search-con{
+    padding: 40px 0 30px 250px;
+    margin-bottom: 60px;
+}
+
+.header .search-con .search-input{
+    position: absolute;
+    left: 488px;
+    width: 500px;
+    height: 39.5px;
+    line-height: 40px;
+    font-size: 17px;
+    padding-left: 10px;
+    border: 2px solid #FF8900;
+    border-radius: 15px 0 0 15px;
+}
+
+.header .search-con .search-btn{
+    position: absolute;
+    float: left;
+    left: 1000px;
+    height: 43px;
+    width: 120px;
+    right: -55px;
+    border: 2px solid #FF8900;
+    border-radius: 0 15px 15px 0;
+    font-size: 18px;
+
+}

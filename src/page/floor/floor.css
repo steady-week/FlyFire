@@ -1,0 +1,112 @@
+/*keywords-list*/
+.keywords-list {
+    float: left;
+    height: 350px;
+    width: 240px;
+    padding: 10px 0;
+    margin-left: 50px;
+    background: #888888;
+    color: #ffffff;
+}
+
+.keywords-list .keywords-item {
+    padding-left: 20px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.keywords-list .keywords-item .link {
+    color: #fff;
+    margin-right: 7px;
+}
+
+.keywords-list .keywords-item:hover {
+    background: #2BA496;
+}
+
+.keywords-list .keywords-item .link:hover {
+    color: #c60023;
+}
+
+/*轮播层，轮播具体样式在bannerCSS*/
+.banner-con {
+    float: left;
+    width: 900px;
+    height: 370px;
+    margin-left: 20px;
+    background: #eeeeee;
+}
+
+.banner-con .loading {
+    margin-top: 150px;
+}
+
+/*floor*/
+.floor-wrap .floor-title {
+    height: 50px;
+    line-height: 50px;
+    color: #2A72FF;
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: 2px solid #2A72FF;
+}
+
+/*更改楼层颜色 */
+.floor-wrap:nth-child(2) .floor-title{
+    color: #D58717;
+    border-bottom: 2px solid #D58717;
+}
+
+.floor-wrap:nth-child(3) .floor-title{
+    color: #a93931;
+    border-bottom: 2px solid #a93931;
+}
+
+.floor-wrap:nth-child(4) .floor-title{
+    color: #1B35FE;
+    border-bottom: 2px solid #1B35FE;
+}
+
+.floor-wrap:nth-child(5) .floor-title{
+    color: #642663;
+    border-bottom: 2px solid #642663;
+}
+.floor-wrap .floor-list{
+    overflow: hidden;
+}
+
+.floor-wrap .floor-item {
+    position: relative;
+    width: 240px;
+    height: 260px;
+    margin:  10px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.floor-wrap .floor-item:hover{
+    box-shadow: 0 0 8px #6C9C9A;
+}
+
+.floor-wrap .floor-item .floor-test{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 16px;
+    color: #555555;
+}
+
+
+.floor-wrap .floor-item .floor-img{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    width: 80%;
+    height: 80%;
+    border: none;
+}
+

@@ -1,0 +1,17 @@
+.page-wrap{
+    padding: 7% 0;
+    text-align: center;
+}
+
+.result-con{
+    display: none;
+}
+
+.result-con .result-content{
+    margin-top: 40px;
+}
+
+.result-con .result-content .link{
+    padding: 5px 10px;
+    border: 1px solid #cccccc;
+}

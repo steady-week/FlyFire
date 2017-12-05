@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require ('html-loader!./public/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title%> -飞火商城</title>
+    <link rel="stylesheet" href="../../dist/css/common.css">
+</head>
+<body>
+<%= require ('html-loader!./public/nav.html') %>
+<%= require ('html-loader!./public/header.html') %>
+<div class="crumb">
+    <div class="w">
+        <div class="crumb-con">
+            <a href="./index.html" class="link user-center-title">FiyFire</a>
+            <span>></span>
+            <span class="link-test"><%= htmlWebpackPlugin.options.title%></span>
+        </div>
+    </div>
+</div>
+<div class="page-wrap w">
+    <ul class="sort-con">
+        <li class="sort-item">默认排序</li>
+        <li class="sort-item asc active">
+            <span>价格</span>
+            <div class="fa fa-sort-asc"></div>
+            <div class="fa fa-sort-desc"></div>
+        </li>
+    </ul>
+    <!--分页容器-->
+    <div id="err-tip">
+        <p class="err-tip">很抱歉，实在找不到您要的商品。</p>
+    </div>
+    <div class="pagination"></div>
+</div>
+<div class="footer-footer">
+    <%= require ('html-loader!./public/footer.html') %>
+</div>
+</body>
+</html>
