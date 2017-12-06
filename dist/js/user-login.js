@@ -1,144 +1,19 @@
-webpackJsonp([4],{
+webpackJsonp([5],{
 
-/***/ 1:
+/***/ 20:
 /***/ (function(module, exports, __webpack_require__) {
 
-var ff = __webpack_require__(0);
+module.exports = __webpack_require__(21);
 
-var _user = {
-    // 用户登录
-    login: function (userInfo, resolve, reject) {
-        ff.request({
-            url: ff.getServerUrl('/user/login.do'),
-            data: userInfo,
-            method: 'POST',
-            success: resolve,
-            error: reject
-        });
-    },
-    // 检查用户名
-    checkUsername: function (username, resolve, reject) {
-        ff.request({
-            url: ff.getServerUrl('/user/check_valid.do'),
-            data: {
-                type: 'username',
-                str: username
-            },
-            method: 'POST',
-            success: resolve,
-            error: reject
-        });
-    },
-    // 用户注册
-    register: function (userInfo, resolve, reject) {
-        ff.request({
-            url: ff.getServerUrl('/user/register.do'),
-            data: userInfo,
-            method: 'POST',
-            success: resolve,
-            error: reject
-        });
-    },
-    // 检查登录状态
-    checkLogin: function (resolve, reject) {
-        ff.request({
-            url: ff.getServerUrl('/user/get_user_info.do'),
-            method: 'POST',
-            success: resolve,
-            error: reject
-        });
-    },
-    // 获取用户密码提示问题
-    getQuestion: function (username, resolve, reject) {
-        ff.request({
-            url: ff.getServerUrl('/user/forget_get_question.do'),
-            data: {
-                username: username
-            },
-            method: 'POST',
-            success: resolve,
-            error: reject
-        });
-    },
-    // 检查密码提示问题答案
-    checkAnswer: function (userInfo, resolve, reject) {
-        ff.request({
-            url: ff.getServerUrl('/user/forget_check_answer.do'),
-            data: userInfo,
-            method: 'POST',
-            success: resolve,
-            error: reject
-        });
-    },
-    // 重置密码
-    resetPassword: function (userInfo, resolve, reject) {
-        ff.request({
-            url: ff.getServerUrl('/user/forget_reset_password.do'),
-            data: userInfo,
-            method: 'POST',
-            success: resolve,
-            error: reject
-        });
-    },
-    // 获取用户信息
-    getUserInfo: function (resolve, reject) {
-        ff.request({
-            url: ff.getServerUrl('/user/get_information.do'),
-            method: 'POST',
-            success: resolve,
-            error: reject
-        });
-    },
-    // 更新个人信息
-    updateUserInfo: function (userInfo, resolve, reject) {
-        ff.request({
-            url: ff.getServerUrl('/user/update_information.do'),
-            data: userInfo,
-            method: 'POST',
-            success: resolve,
-            error: reject
-        });
-    },
-    // 登录状态下更新密码
-    updatePassword: function (userInfo, resolve, reject) {
-        ff.request({
-            url: ff.getServerUrl('/user/reset_password.do'),
-            data: userInfo,
-            method: 'POST',
-            success: resolve,
-            error: reject
-        });
-    },
-    // 登出
-    logout: function (resolve, reject) {
-        ff.request({
-            url: ff.getServerUrl('/user/logout.do'),
-            method: 'POST',
-            success: resolve,
-            error: reject
-        });
-    }
-};
-module.exports = _user;
 
 /***/ }),
 
 /***/ 21:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(22);
-
-
-/***/ }),
-
-/***/ 22:
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(23);
-__webpack_require__(5);
+__webpack_require__(22);
+__webpack_require__(4);
 var ff = __webpack_require__(0);
-var _user   = __webpack_require__(1);
-
 // 表单里的错误提示
 var formError = {
     show : function(errMsg){
@@ -216,11 +91,11 @@ $(function () {
 
 /***/ }),
 
-/***/ 23:
+/***/ 22:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
 
-},[21]);
+},[20]);

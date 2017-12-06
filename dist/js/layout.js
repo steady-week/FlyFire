@@ -147,7 +147,7 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -157,7 +157,7 @@
 var conf = {
     serverHost: ''
 };
-var Hogan = __webpack_require__(14);
+var Hogan = __webpack_require__(13);
 var ff = {
     request: function (param) {
         var that = this;
@@ -253,11 +253,10 @@ module.exports = ff;
 
 /***/ }),
 /* 1 */,
-/* 2 */,
-/* 3 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(13);
+__webpack_require__(12);
 var ff = __webpack_require__(0);
 //通用页面头部
 var header = {
@@ -298,10 +297,16 @@ var header = {
 header.init();
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(16);
 
 /***/ }),
 /* 5 */
@@ -309,67 +314,13 @@ header.init();
 
 __webpack_require__(17);
 
+
 /***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(18);
-// var ff = require('../../../PTools/ff');
-
-// var navSide = {
-//     option: {
-//         name: "",
-//         navList: [
-//             {
-//                 name: 'user-center',
-//                 desc: '个人中心',
-//                 href: './user-center.html'
-//             },
-//             {
-//                 name: 'user-password-update',
-//                 desc: '修改密码',
-//                 href: './user-password-update.html'
-//             },
-//             {
-//                 name: 'user-center',
-//                 desc: '购物车(0)',
-//                 href: './pass-update.html'
-//             },
-//             {
-//                 name: 'user-center',
-//                 desc: '关于飞火',
-//                 href: './about.html'
-//             }
-//         ]
-//     },
-//     init: function (option) {
-//         $.extend(this.option, option);
-//         //合并选项，后一项会合并到前一项，并且改变前一项的那内容，想要不改需要在前一项的前面就一个空对象{}
-//         this.renderNav();
-//     },
-//     //渲染导航菜单
-//     renderNav: function () {
-//         //计算active的数据
-//         for (var i = 0, iLength = this.option.navList.length; i < iLength; i++) {
-//             if (this.option.navList[i].name === this.option.name) {
-//                 this.option.navList[i].isActive = true;
-//             }
-//         }
-//         var navHtml = ff.renderHtml(templateIndex, {
-//             navList: this.option.navList
-//         })
-//     }
-// };
-//
-//
-// module.exports = navSide.init();
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
 __webpack_require__(19);
-__webpack_require__(20);
 (function bannerLoad() {
     if ($(' #banner').load) {
         $('#loading').hide();
@@ -393,38 +344,44 @@ $(function () {
 
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(9);
+module.exports = __webpack_require__(8);
 
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(9);
 __webpack_require__(10);
-__webpack_require__(11);
+__webpack_require__(2);
 __webpack_require__(3);
 __webpack_require__(4);
 __webpack_require__(5);
 __webpack_require__(6);
-__webpack_require__(7);
 // require('../list/list');
 var ff = __webpack_require__(0);
-var navSide = __webpack_require__(6);
+var navSide = __webpack_require__(5);
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(12);
+__webpack_require__(11);
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 12 */
@@ -434,12 +391,6 @@ __webpack_require__(12);
 
 /***/ }),
 /* 13 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -459,14 +410,14 @@ __webpack_require__(12);
 
 // This file is for use with Node.js. See dist/ for browser files.
 
-var Hogan = __webpack_require__(15);
-Hogan.Template = __webpack_require__(16).Template;
+var Hogan = __webpack_require__(14);
+Hogan.Template = __webpack_require__(15).Template;
 Hogan.template = Hogan.Template;
 module.exports = Hogan;
 
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -895,7 +846,7 @@ module.exports = Hogan;
 
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -1242,6 +1193,12 @@ var Hogan = {};
 
 
 /***/ }),
+/* 16 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
 /* 17 */
 /***/ (function(module, exports) {
 
@@ -1251,16 +1208,10 @@ var Hogan = {};
 /* 18 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports) {
-
 (function(e,t){if(!e)return t;var n=function(){this.el=t;this.items=t;this.sizes=[];this.max=[0,0];this.current=0;this.interval=t;this.opts={speed:500,delay:3e3,complete:t,keys:!t,dots:t,fluid:t};var n=this;this.init=function(t,n){this.el=t;this.ul=t.children("ul");this.max=[t.outerWidth(),t.outerHeight()];this.items=this.ul.children("li").each(this.calculate);this.opts=e.extend(this.opts,n);this.setup();return this};this.calculate=function(t){var r=e(this),i=r.outerWidth(),s=r.outerHeight();n.sizes[t]=[i,s];if(i>n.max[0])n.max[0]=i;if(s>n.max[1])n.max[1]=s};this.setup=function(){this.el.css({overflow:"hidden",width:n.max[0],height:this.items.first().outerHeight()});this.ul.css({width:this.items.length*100+"%",position:"relative"});this.items.css("width",100/this.items.length+"%");if(this.opts.delay!==t){this.start();this.el.hover(this.stop,this.start)}this.opts.keys&&e(document).keydown(this.keys);this.opts.dots&&this.dots();if(this.opts.fluid){var r=function(){n.el.css("width",Math.min(Math.round(n.el.outerWidth()/n.el.parent().outerWidth()*100),100)+"%")};r();e(window).resize(r)}if(this.opts.arrows){this.el.parent().append('<p class="arrows"><span class="prev">←</span><span class="next">→</span></p>').find(".arrows span").click(function(){e.isFunction(n[this.className])&&n[this.className]()})}if(e.event.swipe){this.el.on("swipeleft",n.prev).on("swiperight",n.next)}};this.move=function(t,r){if(!this.items.eq(t).length)t=0;if(t<0)t=this.items.length-1;var i=this.items.eq(t);var s={height:i.outerHeight()};var o=r?5:this.opts.speed;if(!this.ul.is(":animated")){n.el.find(".dot:eq("+t+")").addClass("active").siblings().removeClass("active");this.el.animate(s,o)&&this.ul.animate(e.extend({left:"-"+t+"00%"},s),o,function(i){n.current=t;e.isFunction(n.opts.complete)&&!r&&n.opts.complete(n.el)})}};this.start=function(){n.interval=setInterval(function(){n.move(n.current+1)},n.opts.delay)};this.stop=function(){n.interval=clearInterval(n.interval);return n};this.keys=function(t){var r=t.which;var i={37:n.prev,39:n.next,27:n.stop};if(e.isFunction(i[r])){i[r]()}};this.next=function(){return n.stop().move(n.current+1)};this.prev=function(){return n.stop().move(n.current-1)};this.dots=function(){var t='<ol class="dots">';e.each(this.items,function(e){t+='<li class="dot'+(e<1?" active":"")+'">'+(e+1)+"</li>"});t+="</ol>";this.el.addClass("has-dots").append(t).find(".dot").click(function(){n.move(e(this).index())})}};e.fn.unslider=function(t){var r=this.length;return this.each(function(i){var s=e(this);var u=(new n).init(s,t);s.data("unslider"+(r>1?"-"+(i+1):""),u)})}})(window.jQuery,false)
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
