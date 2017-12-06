@@ -2,7 +2,7 @@ require('./user-password-update.css');
 require('../common/header/header');
 require('../common/nav/nav');
 var ff = require('../../PTools/ff');
-var _user = require('../../service/user-service.js');
+
 
 
 var formError = {

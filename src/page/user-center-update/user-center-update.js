@@ -2,7 +2,6 @@ require('./user-center-update.css');
 require('../common/header/header');
 require('../common/nav/nav');
 var ff = require('../../PTools/ff');
-var _user =require('../../service/user-service')
 
 var formError = {
     show: function (errMsg) {
@@ -20,22 +19,6 @@ var page = {
     },
     bindEvent: function () {
         var that = this;
-        // 验证username
-        //当失去焦点时触发.blur()
-        // $('#username').blur(
-        //     function () {
-        //         var username = $.trim($(this).val());
-        //         if (!username){
-        //             return
-        //         }
-        //         // 异步验证用户名是否存在
-        //         _user.checkUsername(username, function (res) {
-        //             formError.hide();
-        //         }, function (errMsg) {
-        //             formError.show(errMsg);
-        //         })
-        //     }
-        // );
         // 注册按钮的点击
         $('#save').click(function () {
             that.submit()

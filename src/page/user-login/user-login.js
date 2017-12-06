@@ -1,8 +1,6 @@
 require('./user-login.css');
 require('../common/nav-simple/nav-simple');
 var ff = require('../../PTools/ff');
-var _user   = require('../../service/user-service');
-
 // 表单里的错误提示
 var formError = {
     show : function(errMsg){
